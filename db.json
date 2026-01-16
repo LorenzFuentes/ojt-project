@@ -71,6 +71,30 @@
       "username": "VJh",
       "email": "vince@gmail.com",
       "password": "vincej"
+    },
+    {
+      "id": 7,
+      "firstName": "Jairo",
+      "middleName": "",
+      "lastName": "Garcia",
+      "contact": "09123456789",
+      "department": "IT",
+      "position": "Intern",
+      "username": "Jai",
+      "email": "jai@gmail.com",
+      "password": "jaijai"
+    },
+    {
+      "id": 8,
+      "firstName": "ralph",
+      "middleName": "",
+      "lastName": "Cruz",
+      "contact": "09123456789",
+      "department": "IT",
+      "position": "Intern",
+      "username": "Sindel",
+      "email": "rc@gmail.com",
+      "password": "ralphc"
     }
   ],
   "admin": [
