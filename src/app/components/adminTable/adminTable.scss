@@ -1,0 +1,157 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+/* TABLE WRAPPER (scrollable) */
+.table-wrapper {
+  max-width: 1200px;
+  max-height: 520px;
+  overflow-x: auto;
+  overflow-y: auto;
+  border-radius: 10px;
+  position: relative;
+  border: 2px solid black;
+}
+
+/* Scrollbar */
+.table-wrapper::-webkit-scrollbar {
+  width: 10px;
+  height: 10px; 
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background: #2F2E36;     
+  border-radius: 10px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: #e3e0e3;    
+  border-radius: 10px;
+  border: 2px solid #2F2E36; 
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #715A5A;
+}
+
+/* Page wrapper */
+.user-list-container {
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px;
+  color: #fff;
+}
+
+/* Title */
+.page-title {
+  font-size: 24px;
+  margin-bottom: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Buttons */
+.btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.25s ease;
+}
+
+.primary-btn { background: #6C63FF; color: #fff; }
+.secondary-btn { background: #4ECDC4; color: #000; }
+.edit-btn { background: #F7B801; color: #000; }
+.delete-btn { background: #E63946; color: #fff; }
+
+.btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+/* TABLE */
+.user-table {
+  width: 100%;
+  min-width: 900px;       /* ensures table is wide for horizontal scroll */
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  color: #000;
+}
+
+/* Table header (sticky top) */
+.user-table thead th {
+  position: sticky;
+  top: 0;
+  background: #715A5A;
+  z-index: 10;
+  text-align: center;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 12px 16px;
+  white-space: nowrap;   /* prevents wrapping */
+}
+
+/* Sticky last column (Action) */
+.user-table th:last-child,
+.user-table td:last-child {
+  position: sticky;
+  right: 0;
+  background: #ffffff;    /* match header or row background */
+  z-index: 5;
+}
+
+/* Table body */
+.user-table td {
+  padding: 10px 16px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+/* Row hover */
+.user-table tbody tr:hover {
+  background: #d3d3d3;
+}
+
+.user-table tbody tr .button-row:hover {
+  background: #d3d3d3;
+}
+
+/* Row separator */
+// .user-table tbody tr {
+//   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+// }
+
+// .user-table tbody tr:last-child {
+//   border-bottom: none;
+// }
+
+/* Action buttons inside table */
+.button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;  
+  white-space: nowrap;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-title { font-size: 20px; }
+
+  .user-table th,
+  .user-table td { 
+    font-size: 11px; 
+    padding: 6px;
+  }
+
+  .button-row { flex-direction: column; }
+}

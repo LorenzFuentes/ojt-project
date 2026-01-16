@@ -1,0 +1,40 @@
+<div class="user-list-container">
+  <h1 class="page-title">Admin Dashboard</h1>
+    <div class="table-wrapper">
+      <table class="user-table">
+        <thead>
+          <tr>
+            <th>Admin ID</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Email</th>
+            <th>Full name</th>
+            <th>Access type</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let admin of admins; index as i">
+            <td>{{ i + 1 }}</td>
+            <td>{{ admin.username }}</td>
+            <td>{{ admin.password }}</td>
+            <td>{{ admin.email }}</td>
+            <td>{{ admin.fullname }}</td>
+            <td>{{ admin.access }}</td>
+            <td class="button-row">
+              <button
+                [routerLink]="['edit', admin.id]"
+                class="btn edit-btn">
+                Edit
+              </button>
+              <button
+                (click)="deleteAdmin(admin.id)"
+                class="btn delete-btn">
+                Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>

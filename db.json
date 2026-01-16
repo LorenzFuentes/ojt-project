@@ -1,0 +1,158 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "lorenz",
+      "middleName": "caluag",
+      "lastName": "fuentes",
+      "contact": "09123456789",
+      "department": "CEU",
+      "position": "Student",
+      "username": "lorenz",
+      "email": "lorenzcfuentes@gmail.com",
+      "password": "admin123"
+    },
+    {
+      "id": 2,
+      "firstName": "seb",
+      "middleName": "caluag",
+      "lastName": "fuentes",
+      "contact": "9123456789",
+      "department": "CEU",
+      "position": "student",
+      "username": "seb",
+      "email": "seb@gmail.com",
+      "password": "asdfgh"
+    },
+    {
+      "id": 3,
+      "firstName": "derrick",
+      "middleName": "",
+      "lastName": "rose",
+      "contact": "9123456789",
+      "department": "Marketing",
+      "position": "CEO",
+      "username": "drose",
+      "email": "drose@gmail.com",
+      "password": "admin123"
+    },
+    {
+      "id": 4,
+      "firstName": "Marc",
+      "middleName": "",
+      "lastName": "Zapata",
+      "contact": "09123456789",
+      "department": "HR",
+      "position": "HR Head",
+      "username": "zap",
+      "email": "marc@gmail.com",
+      "password": "marczap"
+    },
+    {
+      "id": 5,
+      "firstName": "Neil",
+      "middleName": "",
+      "lastName": "Junior",
+      "contact": "09123456789",
+      "department": "HR",
+      "position": "Role",
+      "username": "RNCS",
+      "email": "rncs@gmail.com",
+      "password": "rncsss"
+    },
+    {
+      "id": 6,
+      "firstName": "Vince",
+      "middleName": "",
+      "lastName": "Capule",
+      "contact": "09123456789",
+      "department": "QA",
+      "position": "Intern",
+      "username": "VJh",
+      "email": "vince@gmail.com",
+      "password": "vincej"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "username": "lorenz",
+      "password": "admin123",
+      "email": "email@gmail.com",
+      "fullname": "lorzse",
+      "access": "admin"
+    },
+    {
+      "id": "2",
+      "username": "jairo",
+      "password": "admin123",
+      "email": "email@gmail.com",
+      "fullname": "jairo garcia",
+      "access": "admin"
+    },
+    {
+      "id": "3",
+      "username": "marc",
+      "password": "admin123",
+      "email": "email@gmail.com",
+      "fullname": "marc zapata",
+      "access": "admin"
+    },
+    {
+      "id": "4",
+      "username": "vince",
+      "password": "admin123",
+      "email": "email@gmail.com",
+      "fullname": "vj",
+      "access": "admin"
+    },
+    {
+      "id": "5",
+      "username": "ralph",
+      "password": "admin123",
+      "email": "email@gmail.com",
+      "fullname": "ralpg cruz",
+      "access": "admin"
+    },
+    {
+      "id": "6",
+      "username": "junior",
+      "password": "admin123",
+      "email": "email@gmail.com",
+      "fullname": "RNCS",
+      "access": "admin"
+    },
+    {
+      "id": "7",
+      "username": "lyzza",
+      "password": "admin123",
+      "email": "email@gmail.com",
+      "fullname": "Rose abig",
+      "access": "admin"
+    },
+    {
+      "id": "8",
+      "username": "gian",
+      "password": "admin123",
+      "email": "email@gmail.com",
+      "fullname": "Carlo ",
+      "access": "admin"
+    },
+    {
+      "id": "9",
+      "username": "neil",
+      "password": "admin123",
+      "email": "email@gmail.com",
+      "fullname": "neil joseph",
+      "access": "admin"
+    },
+    {
+      "id": "10",
+      "username": "adi",
+      "password": "admin123",
+      "email": "email@gmail.com",
+      "fullname": "adi from laco",
+      "access": "admin"
+    }
+  ]
+}

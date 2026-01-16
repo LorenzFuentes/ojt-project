@@ -1,0 +1,48 @@
+<div class="login-page">
+  <div class="login-container">
+
+    <!-- LEFT SIDE -->
+    <div class="login-left">
+      <h1>Hello, there!</h1>
+      <p>Not signed up yet? Sign up to start your journey</p>
+      <button  nzType="primary" class="register-form-button" (click)="getRegister()">Register</button>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="login-right">
+      <form nz-form [formGroup]="validateForm" class="login-form" (ngSubmit)="submitForm()">
+        <h1 class="login-text">Login</h1>
+        <nz-form-item>
+          <nz-form-control nzErrorTip="Please input your username!">
+            <nz-input-wrapper>
+              <nz-icon nzInputPrefix nzType="user" />
+              <input nz-input formControlName="username" placeholder="Username" />
+            </nz-input-wrapper>
+          </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+          <nz-form-control nzErrorTip="Please input your Password!">
+            <nz-input-password>
+              <nz-icon nzInputPrefix nzType="lock" />
+              <input nz-input formControlName="password" placeholder="Password" />
+            </nz-input-password>
+          </nz-form-control>
+        </nz-form-item>
+
+        <div nz-row class="login-form-margin">
+          <div nz-col [nzSpan]="12">
+            <label nz-checkbox formControlName="remember">
+              <span>Remember me</span>
+            </label>
+          </div>
+          <div nz-col [nzSpan]="12">
+                <a class="login-form-forgot">Forgot password</a>
+            </div>
+        </div>
+        <button  nzType="primary" class="login-form-button">Log in</button>
+      </form>
+    </div>
+
+  </div>
+</div>
